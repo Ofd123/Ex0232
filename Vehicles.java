@@ -59,5 +59,17 @@ public class Vehicles
     {
         this.serielNum = serielNum;
     }
+//-----------------------------------------------
 
+    @java.lang.Override
+    public java.lang.String toString()
+    {
+        return "Vehicles{" +
+                "serielNum=" + serielNum +
+                ", age=" + age +
+                ", numberOfWheels=" + numberOfWheels +
+                ", steeringShape='" + steeringShape + '\'' +
+                ", polutionPerMin=" + polutionPerMin +
+                '}';
+    }
 }
