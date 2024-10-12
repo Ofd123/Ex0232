@@ -1,11 +1,11 @@
-public class Heavy extends Vehicles
+public class Tractor extends Heavy
 {
-    int possibleAmountOfTrails;
+    String typeOfDragged;
 
-    public Heavy(int serielNum, int age, int numberOfWheels, String steeringShape, double polutionPerMin, int possibleAmountOfTrails)
+    public Tractor(int serielNum, int age, int numberOfWheels, String steeringShape, double polutionPerMin, int possibleAmountOfTrails, String typeOfDragged)
     {
-        super(serielNum, age, numberOfWheels, steeringShape, polutionPerMin);
-        this.possibleAmountOfTrails = possibleAmountOfTrails;
+        super(serielNum, age, numberOfWheels, steeringShape, polutionPerMin, possibleAmountOfTrails);
+        this.typeOfDragged = typeOfDragged;
     }
     //----------------------------------------------
     public int getAge()
@@ -33,22 +33,26 @@ public class Heavy extends Vehicles
         return super.getSerielNum();
     }
     //----------------------------------------------
+
     public int getPossibleAmountOfTrails()
     {
-        return possibleAmountOfTrails;
-    }
-    public void setPossibleAmountOfTrails(int possibleAmountOfTrails)
-    {
-        this.possibleAmountOfTrails = possibleAmountOfTrails;
+        return super.getPossibleAmountOfTrails();
     }
     //----------------------------------------------
-
-    @java.lang.Override
-    public java.lang.String toString()
+    public String getTypeOfDragged()
     {
-        return "Heavy{" +
-                "possibleAmountOfTrails=" + possibleAmountOfTrails +
+        return typeOfDragged;
+    }
+    public void setTypeOfDragged(String typeOfDragged)
+    {
+        this.typeOfDragged = typeOfDragged;
+    }
+    //----------------------------------------------
+    @Override
+    public String toString()
+    {
+        return "Tractor{" +
+                "typeOfDragged='" + typeOfDragged + '\'' +
                 '}';
     }
-
 }

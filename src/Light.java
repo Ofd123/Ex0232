@@ -1,11 +1,10 @@
-public class Heavy extends Vehicles
+public class Light extends Vehicles
 {
-    int possibleAmountOfTrails;
-
-    public Heavy(int serielNum, int age, int numberOfWheels, String steeringShape, double polutionPerMin, int possibleAmountOfTrails)
+    boolean hasEngine;
+    public Light(int serielNum, int age, int numberOfWheels, String steeringShape, double polutionPerMin, boolean hasEngine )
     {
-        super(serielNum, age, numberOfWheels, steeringShape, polutionPerMin);
-        this.possibleAmountOfTrails = possibleAmountOfTrails;
+        super( serielNum, age, numberOfWheels, steeringShape, polutionPerMin);
+        this.hasEngine = hasEngine;
     }
     //----------------------------------------------
     public int getAge()
@@ -33,22 +32,20 @@ public class Heavy extends Vehicles
         return super.getSerielNum();
     }
     //----------------------------------------------
-    public int getPossibleAmountOfTrails()
+    public boolean getHasEngine()
     {
-        return possibleAmountOfTrails;
+        return hasEngine;
     }
-    public void setPossibleAmountOfTrails(int possibleAmountOfTrails)
+    public void setHasEngine(boolean hasEngine)
     {
-        this.possibleAmountOfTrails = possibleAmountOfTrails;
+        this.hasEngine = hasEngine;
     }
     //----------------------------------------------
-
-    @java.lang.Override
-    public java.lang.String toString()
+    @Override
+    public String toString()
     {
-        return "Heavy{" +
-                "possibleAmountOfTrails=" + possibleAmountOfTrails +
+        return "Light{" +
+                "hasEngine=" + hasEngine +
                 '}';
     }
-
 }

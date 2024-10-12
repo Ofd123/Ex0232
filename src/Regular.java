@@ -1,11 +1,11 @@
-public class Heavy extends Vehicles
+public class Regular extends Vehicles
 {
-    int possibleAmountOfTrails;
+    int amountOfPassengers;
 
-    public Heavy(int serielNum, int age, int numberOfWheels, String steeringShape, double polutionPerMin, int possibleAmountOfTrails)
+    public Regular(int serielNum, int age, int numberOfWheels, String steeringShape, double polutionPerMin, int amountOfPassengers)
     {
         super(serielNum, age, numberOfWheels, steeringShape, polutionPerMin);
-        this.possibleAmountOfTrails = possibleAmountOfTrails;
+        this.amountOfPassengers = amountOfPassengers;
     }
     //----------------------------------------------
     public int getAge()
@@ -33,22 +33,20 @@ public class Heavy extends Vehicles
         return super.getSerielNum();
     }
     //----------------------------------------------
-    public int getPossibleAmountOfTrails()
+    public int getAmountOfPassengers()
     {
-        return possibleAmountOfTrails;
+        return amountOfPassengers;
     }
-    public void setPossibleAmountOfTrails(int possibleAmountOfTrails)
+    public void setAmountOfPassengers(int amountOfPassengers)
     {
-        this.possibleAmountOfTrails = possibleAmountOfTrails;
+        this.amountOfPassengers = amountOfPassengers;
     }
     //----------------------------------------------
-
-    @java.lang.Override
-    public java.lang.String toString()
+    @Override
+    public String toString()
     {
-        return "Heavy{" +
-                "possibleAmountOfTrails=" + possibleAmountOfTrails +
+        return "Regular{" +
+                "amountOfPassengers=" + amountOfPassengers +
                 '}';
     }
-
 }
