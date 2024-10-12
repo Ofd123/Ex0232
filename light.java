@@ -1,8 +1,6 @@
-public class Heavy extends Vehicles
+public class Light extends Vehicles
 {
-    int possibleAmountOfTrails;
-
-    public Heavy(int serielNum, int age, int numberOfWheels, String steeringShape, double polutionPerMin, int possibleAmountOfTrails)
+    public Light(int serielNum, int age, int numberOfWheels, String steeringShape, double polutionPerMin, int possibleAmountOfTrails)
     {
         super(serielNum, age, numberOfWheels, steeringShape, polutionPerMin);
         this.possibleAmountOfTrails = possibleAmountOfTrails;
@@ -20,12 +18,12 @@ public class Heavy extends Vehicles
     //----------------------------------------------
     public String getSteeringShape()
     {
-        return super.getSteeringShape;
+        return super.getSteeringShape();
     }
     //----------------------------------------------
     public double getPolutionPerMin()
     {
-        return super.getPolutionPerMin;
+        return super.getPolutionPerMin();
     }
     //----------------------------------------------
     public int getSerielNum()
