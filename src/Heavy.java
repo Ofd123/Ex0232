@@ -25,6 +25,7 @@ public class Heavy extends Vehicles
                 '}';
     }
     //----------------------------------------------
+
     @Override
     public double exhaust()
     {
