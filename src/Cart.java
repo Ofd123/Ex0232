@@ -24,4 +24,10 @@ public class Cart extends Light
                 "chargingTime=" + chargingTime +
                 '}';
     }
+    //---------------------------------------------
+    @Override
+    public double exhaust()
+    {
+        return super.exhaust() + 17;
+    }
 }

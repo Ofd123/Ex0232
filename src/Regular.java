@@ -24,4 +24,10 @@ public class Regular extends Vehicles
                 "amountOfPassengers=" + amountOfPassengers +
                 '}';
     }
+    //---------------------------------------------
+    @Override
+    public double exhaust()
+    {
+        return super.exhaust() + 60;
+    }
 }
