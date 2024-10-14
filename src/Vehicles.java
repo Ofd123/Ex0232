@@ -72,5 +72,8 @@ public class Vehicles
                 ", polutionPerMin=" + polutionPerMin +
                 '}';
     }
-
+    public double exhaust()
+    {
+        return this.polutionPerMin * 60 * 24;
+    }
 }

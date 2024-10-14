@@ -7,37 +7,6 @@ public class Car extends Regular
         super(serielNum, age, numberOfWheels, steeringShape, polutionPerMin, amountOfPassengers);
         this.accelerationSpeed = accelerationSpeed;
     }
-    //----------------------------------------------
-    public int getAge()
-    {
-        return super.getAge();
-    }
-    //----------------------------------------------
-    public int getNumberOfWheels()
-    {
-        return super.getNumberOfWheels();
-    }
-    //----------------------------------------------
-    public String getSteeringShape()
-    {
-        return super.getSteeringShape();
-    }
-    //----------------------------------------------
-    public double getPolutionPerMin()
-    {
-        return super.getPolutionPerMin();
-    }
-    //----------------------------------------------
-    public int getSerielNum()
-    {
-        return super.getSerielNum();
-    }
-    //----------------------------------------------
-    public int getAmountOfPassengers()
-    {
-        return super.getAmountOfPassengers();
-    }
-    //----------------------------------------------
     public int getAccelerationSpeed()
     {
         return accelerationSpeed;

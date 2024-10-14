@@ -8,31 +8,6 @@ public class Truck extends Heavy
         this.maxLoadingWeight = maxLoadingWeight;
     }
     //----------------------------------------------
-    public int getAge()
-    {
-        return super.getAge();
-    }
-    //----------------------------------------------
-    public int getNumberOfWheels()
-    {
-        return super.getNumberOfWheels();
-    }
-    //----------------------------------------------
-    public String getSteeringShape()
-    {
-        return super.getSteeringShape();
-    }
-    //----------------------------------------------
-    public double getPolutionPerMin()
-    {
-        return super.getPolutionPerMin();
-    }
-    //----------------------------------------------
-    public int getSerielNum()
-    {
-        return super.getSerielNum();
-    }
-    //----------------------------------------------
     public int getMaxLoadingWeight()
     {
         return maxLoadingWeight;

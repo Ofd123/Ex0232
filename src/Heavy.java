@@ -8,31 +8,6 @@ public class Heavy extends Vehicles
         this.possibleAmountOfTrails = possibleAmountOfTrails;
     }
     //----------------------------------------------
-    public int getAge()
-    {
-        return super.getAge();
-    }
-    //----------------------------------------------
-    public int getNumberOfWheels()
-    {
-        return super.getNumberOfWheels();
-    }
-    //----------------------------------------------
-    public String getSteeringShape()
-    {
-        return super.getSteeringShape();
-    }
-    //----------------------------------------------
-    public double getPolutionPerMin()
-    {
-        return super.getPolutionPerMin();
-    }
-    //----------------------------------------------
-    public int getSerielNum()
-    {
-        return super.getSerielNum();
-    }
-    //----------------------------------------------
     public int getPossibleAmountOfTrails()
     {
         return possibleAmountOfTrails;
@@ -42,7 +17,6 @@ public class Heavy extends Vehicles
         this.possibleAmountOfTrails = possibleAmountOfTrails;
     }
     //----------------------------------------------
-
     @java.lang.Override
     public java.lang.String toString()
     {
@@ -50,5 +24,10 @@ public class Heavy extends Vehicles
                 "possibleAmountOfTrails=" + possibleAmountOfTrails +
                 '}';
     }
-
+    //----------------------------------------------
+    @Override
+    public double exhaust()
+    {
+        return super.exhaust() + 500;
+    }
 }

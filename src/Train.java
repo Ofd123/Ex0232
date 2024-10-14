@@ -7,36 +7,6 @@ public class Train extends Heavy
         this.amountOfRailwayCars = amountOfRailwayCars;
     }
     //----------------------------------------------
-    public int getAge()
-    {
-        return super.getAge();
-    }
-    //----------------------------------------------
-    public int getNumberOfWheels()
-    {
-        return super.getNumberOfWheels();
-    }
-    //----------------------------------------------
-    public String getSteeringShape()
-    {
-        return super.getSteeringShape();
-    }
-    //----------------------------------------------
-    public double getPolutionPerMin()
-    {
-        return super.getPolutionPerMin();
-    }
-    //----------------------------------------------
-    public int getSerielNum()
-    {
-        return super.getSerielNum();
-    }
-    //----------------------------------------------
-    public int getPossibleAmountOfTrails()
-    {
-        return super.getPossibleAmountOfTrails();
-    }
-    //----------------------------------------------
     public int getAmountOfRailwayCars()
     {
         return amountOfRailwayCars;
