@@ -24,5 +24,4 @@ public class Cart extends Light
                 "chargingTime=" + chargingTime +
                 '}';
     }
-
 }

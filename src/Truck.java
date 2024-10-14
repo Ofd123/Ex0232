@@ -24,4 +24,10 @@ public class Truck extends Heavy
                 "maxLoadingWeight=" + maxLoadingWeight +
                 '}';
     }
+    //----------------------------------------------
+    @Override
+    public double exhaust()
+    {
+        return super.exhaust() * 1.5;
+    }
 }
