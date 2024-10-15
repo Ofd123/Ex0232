@@ -35,4 +35,9 @@ public class Regular extends Vehicles
     {
         System.out.println("not loud(decent)");
     }
+    //---------------------------------------------
+    public int hitchhikers()
+    {
+        return(amountOfPassengers);
+    }
 }

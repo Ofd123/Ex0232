@@ -30,4 +30,9 @@ public class Cart extends Light
     {
         return super.exhaust() + 17;
     }
+    //---------------------------------------------
+    public int hitchhikers()
+    {
+        return(1);
+    }
 }
