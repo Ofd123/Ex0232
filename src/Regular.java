@@ -30,4 +30,9 @@ public class Regular extends Vehicles
     {
         return super.exhaust() + 60;
     }
+    //---------------------------------------------
+    public void noise()
+    {
+        System.out.println("not loud(decent)");
+    }
 }
