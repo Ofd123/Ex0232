@@ -8,7 +8,7 @@ public class Bicycle extends Light
         this.hasACrepe = hasACrepe;
     }
     //----------------------------------------------
-    public boolean isHasACrepe()
+    public boolean getHasACrepe()
     {
         return hasACrepe;
     }
