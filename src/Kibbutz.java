@@ -28,5 +28,16 @@ public class Kibbutz
         return specificCars;
     }
 
-
+    public int carsWhichUseWheel()
+    {
+        int count = 0;
+        for(int i = 0; i < this.counter; i++)
+        {
+            if(this.vehicles[i].getSteeringShape().compareTo("wheel") == 0)
+            {
+                count += 1;
+            }
+        }
+        return count;
+    }
 }
