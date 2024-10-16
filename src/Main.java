@@ -56,4 +56,22 @@ public class Main
         }
         return sum;
     }
+
+    public static int longestChargingTime(Vehicles[] arr)
+    {
+        int longestTime = 0;
+        int longest = 0;
+        for(int i = 0; i<arr.length; i++)
+        {
+            if(arr[i] instanceof Cart)
+            {
+                 if(((Cart) arr[i]).getChargingTime() > longestTime)
+                 {
+                     longest = i;
+                     longestTime = ((Cart) arr[i]).getChargingTime();
+                 }
+            }
+        }
+        return longest;
+    }
 }

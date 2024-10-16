@@ -30,4 +30,6 @@ public class Heavy extends Vehicles
     {
         return super.exhaust() + 500;
     }
+
+
 }
