@@ -3,7 +3,7 @@ public class Vehicles
     int serielNum;
     int age;
     int numberOfWheels;
-    String steeringShape;
+    String steeringShape; // wheel \ kidon
     double polutionPerMin;
 
     public Vehicles(int serielNum, int age, int numberOfWheels, String steeringShape, double polutionPerMin)
