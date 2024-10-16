@@ -1,9 +1,5 @@
 public class Main
 {
-//    public static void main(String[]args)
-//    {
-//
-//    }
     public static double totalExhaust(Vehicles[] arr)
     {
         double sum = 0;
