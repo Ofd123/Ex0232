@@ -9,4 +9,15 @@ public class Main
         }
         return sum;
     }
+
+    public static void noises(Vehicles[] arr)
+    {
+        for(int i = 0; i<arr.length; i++)
+        {
+            if (arr[i] instanceof Regular)
+            {
+                ((Regular) arr[i]).noise();
+            }
+        }
+    }
 }
